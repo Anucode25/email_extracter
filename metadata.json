@@ -1,0 +1,5 @@
+{
+  "name": "Bulk College Email Extractor",
+  "description": "Extract emails from multiple college websites in bulk and download them as a CSV file.",
+  "requestFramePermissions": []
+}
