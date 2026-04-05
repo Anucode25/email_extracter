@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/8cbc8a17-c88d-4719-894e-dc2c6ae12ff0
 
 ## Run Locally
 
 **Prerequisites:**  Node.js
 
+Once you have the files on your computer, follow these steps:
+Install Node.js: If you don't have it, download and install it from nodejs.org.
+Open Terminal: Open your terminal (or Command Prompt) and navigate to the project folder:
+code
+Bash
+cd path/to/your/project
+Install Dependencies: Run the following command to install all the necessary libraries (Express, React, Axios, Cheerio, etc.):
+   npm install
+Environment Variables:
+Create a file named .env in the root directory.
+Copy the contents from .env.example into it.
+3. Run the Application
+Start the development server by running:
+      npm run dev
+The application will be available at http://localhost:3000 in your web browser.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+Note on Architecture
+As a reminder, this project is built using Node.js (Express) for the backend and React for the frontend. This setup is required to handle the web crawling logic efficiently and bypass browser security restrictions (CORS) that would otherwise block a pure frontend app from scraping other websites.
